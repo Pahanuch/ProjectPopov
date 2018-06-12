@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        bottomnav.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        bottomnav1.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        bottomnav.onNavigationItemSelectedListener = mOnNavigationItemSelectedListener
+        bottomnav1.onNavigationItemSelectedListener = mOnNavigationItemSelectedListener
 
         val adapter = SimpleFragmentPagerAdapter(this, supportFragmentManager)
 
-        viewpager.setAdapter(adapter)
+        viewpager.adapter = adapter
 
         sliding_tabs.setupWithViewPager(viewpager)
 

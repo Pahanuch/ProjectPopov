@@ -21,10 +21,10 @@ class SimpleFragmentPagerAdapter(private val mContext: Context, fm: FragmentMana
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        when (position) {
-            0 -> return mContext.getString(R.string.my_battles_text)
-            1 -> return mContext.getString(R.string.challenges_text)
-            else -> return null
+        return when (position) {
+            0 -> mContext.getString(R.string.my_battles_text)
+            1 -> mContext.getString(R.string.challenges_text)
+            else -> null
         }
     }
 
