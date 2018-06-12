@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        bottomnav.setTextVisibility(false)
+        bottomnav1.setTextVisibility(false)
+
         bottomnav.onNavigationItemSelectedListener = mOnNavigationItemSelectedListener
         bottomnav1.onNavigationItemSelectedListener = mOnNavigationItemSelectedListener
 
@@ -23,10 +26,6 @@ class MainActivity : AppCompatActivity() {
         viewpager.adapter = adapter
 
         sliding_tabs.setupWithViewPager(viewpager)
-
-        bottomnav.setTextVisibility(false)
-        bottomnav1.setTextVisibility(false)
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

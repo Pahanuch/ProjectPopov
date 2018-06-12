@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProjectPopov</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Настройки</string>
     <string name="victories_text">победы</string>
     <string name="lifes">жизни</string>
     <string name="battles_text">битвы</string>
